@@ -6,6 +6,7 @@ function rgbGenerate(){
     var color = "rgb(" + r + "," + g + "," + b + ")";
 
     document.getElementById("output").style.backgroundColor = color;
+    document.getElementById("result").value = color;
 }
 
 document.getElementById("redValue").addEventListener("input",rgbGenerate);
