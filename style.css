@@ -1,5 +1,28 @@
-.root{
-    background-color: #464444;
+body{
     margin: 0px;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: rgb(117, 115, 115);
+    padding: 10px;
+    border-radius: 10px;
+}
+.output{
+    margin-top: 10px;
+}
 
+@media only screen and (min-width: 768px) {
+    .container{
+        margin: 10px 300px 0px 300px;
+    }
+  }
+
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+    .container{
+        margin: 10px 100px 0px 100px;
+    }
+    
+}

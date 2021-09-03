@@ -16,6 +16,10 @@ function generateRandom(){
 
     let color = "rgb(" + r + "," + g + "," + b + ")";
 
+    document.getElementById("redValue").value = r;
+    document.getElementById("greenValue").value = g;
+    document.getElementById("blueValue").value = b;
+
     document.getElementById("output").style.backgroundColor = color;
     document.getElementById("result").value = color;
 }
