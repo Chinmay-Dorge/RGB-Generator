@@ -4,36 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.css">
     <title>RGB Generator</title>
 </head>
 <body>
     <div class="container">
         <div id="redDiv">
-            <p>Red</p>
+            <p class="fontColor">Red</p>
             <input type="range" id="redValue" min="0" max="255" value="255">
             <p id = "redCurrent"></p>
         </div>
     
         <div id="greenDiv">
-            <p>Green</p>
+            <p class="fontColor">Green</p>
             <input type="range" id="greenValue" min="0" max="255" value="255">
             <p id = "greenCurrent"></p>
         </div>
     
         <div id="blueDiv">
-            <p>Blue</p>
+            <p class="fontColor">Blue</p>
             <input type="range" id="blueValue" min="0" max="255" value="255">
             <p id = "blueCurrent"></p>
         </div>
 
-        <div class="">
-            <input type="text" id="result" value="rgb(255,255,255)">
-            <button class="" id="random">Random</button>
+        <div class="box">
+            <input type="text" id="result" value="rgb(255,255,255)" class="Text">
+            <button class="button_slide slide_left" id="random">Random</button>
         </div>
         
         <div id = "output" class="output">
-            <h1>OUTPUT</h1>
+            <h1 id="outputText">OUTPUT</h1>
         </div>
     </div>
 

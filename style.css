@@ -6,23 +6,41 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-    background-color: rgb(117, 115, 115);
+    background-color: #303030;
     padding: 10px;
     border-radius: 10px;
+}
+.fontColor{
+    font-family: 'Azeret Mono', monospace;
+    color: #E8B600;
 }
 .output{
     margin-top: 10px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1030px) {
     .container{
         margin: 10px 300px 0px 300px;
     }
   }
 
-@media only screen and (min-width: 540px) and (max-width: 767px) {
+@media only screen and (min-width: 540px) and (max-width: 1029px) {
     .container{
         margin: 10px 100px 0px 100px;
     }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
     
+}
+
+.Text{
+    padding: 18px 30px;
+    border-radius: 5px;
+    font-family: 'Azeret Mono', monospace;
+    margin: 3px
+}
+.box{
+    display: flex;
 }

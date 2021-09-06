@@ -6,6 +6,7 @@ function rgbGenerate(){
     let color = "rgb(" + r + "," + g + "," + b + ")";
 
     document.getElementById("output").style.backgroundColor = color;
+    document.getElementById("outputText").style.color = color;
     document.getElementById("result").value = color;
 }
 
@@ -21,6 +22,8 @@ function generateRandom(){
     document.getElementById("blueValue").value = b;
 
     document.getElementById("output").style.backgroundColor = color;
+    document.getElementById("outputText").style.color = color;
+
     document.getElementById("result").value = color;
 }
 
